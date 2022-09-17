@@ -1,0 +1,141 @@
+.body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #121212;
+
+  z-index: 0;
+}
+
+.heading {
+  margin-top: 7rem;
+  margin-left: 8rem;
+  margin-bottom: 5rem;
+
+  font-family: "LemonMilk Regular";
+  color: rgba(255, 255, 255, 1);
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.nonCredential {
+  background-color: rgba(255, 255, 255, 0.07);
+  width: 36rem;
+  height: 14rem;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.pinfoCardHeading {
+  font-family: "Montserrat Regular";
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.pinfoCardTable {
+  width: 100%;
+  font-family: "Montserrat Regular";
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+.pinfoCardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.key {
+  font-family: "Montserrat Regular";
+}
+
+.value {
+  font-family: "Montserrat Thin";
+}
+
+.credential {
+  width: 36rem;
+  height: 14rem;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.username,
+.password {
+  background-color: rgba(255, 255, 255, 0.07);
+
+  height: 4rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username > .key,
+.password > .key {
+  font-size: 2rem;
+}
+
+.username > .value,
+.password > .value{
+  font-size: 1.5rem;
+}
+.logoutContainer{
+  width: 100vw;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.logout{
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  color:#121212;
+
+  font-family: "LemonMilk Bold";
+  font-size: 2rem !important;
+
+  width: 14rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 6rem;
+  z-index: 1;
+}
+
+.logout > .material-icons{
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.footerSvg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 5%;
+  z-index: 0;
+}

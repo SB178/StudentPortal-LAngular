@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "LemonMilk Bold";
+  src: url("/assets/fonts/Lemonmilk/LEMONMILK-Bold.ttf");
+}
+
+@font-face {
+  font-family: "LemonMilk Regular";
+  src: url("/assets/fonts/Lemonmilk/LEMONMILK-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("/assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url("/assets/fonts/Montserrat/Montserrat-Thin.ttf");
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}

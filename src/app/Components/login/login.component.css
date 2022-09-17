@@ -1,0 +1,255 @@
+.containerCover {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(
+    45deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgb(73, 73, 73) 100%
+  );
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.container {
+  position: absolute;
+  top: 20%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.frostedtextWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.frostedtext {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+
+  /* Chrome, Safari and all webkit browsers */
+  -webkit-mask-image: url("../../../assets/svg/Login.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  /* -webkit-backdrop-filter: blur(6.4px) ; */
+  backdrop-filter: blur(6.4px);
+  /* FIREFOX */
+  /* mask-image: var(--svgUrl);
+        mask-size: contain;
+        mask-position: center;
+        mask-repeat: no-repeat; */
+}
+
+.loginForm {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputButtonGroup {
+  height: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usernameContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 23rem;
+}
+.usernameButtonGroup {
+  width: 21.5 rem;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 23rem;
+  background: rgba(255, 255, 255, 0.1) !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(3.4px) !important;
+  -webkit-backdrop-filter: blur(3.4px) !important;
+  outline: 0;
+  border: 0px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+input {
+  height: 3rem;
+  font-family: Montserrat Regular;
+  color: white;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+#usernameContainer {
+  width: 20rem;
+}
+#username {
+  width: 19rem;
+}
+#password {
+  width: 14rem;
+}
+
+.material-icons {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.PasswordButtonGroup {
+  width: 23rem;
+}
+
+.passwordContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 23rem;
+  padding-top: 2rem;
+}
+
+.inputButtonGroup > .inputContainer {
+  width: 16rem;
+}
+
+button {
+  color: white;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(3.4px) !important;
+  -webkit-backdrop-filter: blur(3.4px) !important;
+  outline: 0;
+  border: 0px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+#passwordtoggle {
+  position: relative;
+  margin-top: 0;
+  padding-top: 0;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+
+#passwordtoggle > .material-icons {
+  font-size: 1.5rem !important;
+}
+
+#submit {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 3rem;
+  border-radius: 20px !important;
+}
+
+#submit > .material-icons {
+  font-size: 2.5rem !important;
+}
+
+.helperTextContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+
+  backdrop-filter: blur(3.4px) !important;
+  outline: 0;
+  border: 0px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.helperText {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: max-content;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  font-family: Montserrat Thin;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.helperTextContainer:nth-child(1) > .helperText {
+  width: 20rem;
+}
+
+.blobContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.blob:nth-child(1) {
+  position: absolute;
+  left: 38%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  width: 60rem !important;
+}
+.blob:nth-child(2) {
+  position: absolute;
+  left: 62%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  opacity: 0.35;
+  width: 8rem !important;
+}
+.blob:nth-child(3) {
+  position: fixed;
+  left: 50rem;
+  top: 12rem;
+  opacity: 0.05;
+  width: 113rem !important;
+}
+.blob:nth-child(4) {
+  position: fixed;
+  left: 39rem;
+  top: 9rem;
+  opacity: 0.25;
+  width: 2rem !important;
+}

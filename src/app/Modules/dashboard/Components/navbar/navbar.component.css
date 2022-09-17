@@ -1,0 +1,38 @@
+.body {
+  top: 0;
+  width: 97vw;
+  height: 4rem;
+
+  background-color: #202020;
+
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  z-index: 1;
+}
+
+.heading {
+  font-family: Montserrat Regular;
+  color: rgb(198, 198, 198);
+  font-size: 1.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: 0;
+  border: 0;
+  color: rgb(224, 224, 224);
+}
