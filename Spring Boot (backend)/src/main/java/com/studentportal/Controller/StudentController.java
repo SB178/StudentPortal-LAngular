@@ -26,18 +26,18 @@ public class StudentController {
 	StudentService service;
 	
 	
-	@PostMapping()
+	@PostMapping(value="",produces = { "application/json" })
 	ResponseEntity<Integer> checkCredentials(@RequestBody Student student) {
 		System.out.println(student.getName());
 		return ResponseEntity.status(HttpStatus.OK).body(service.checkCredentials(student));
 	}
 	
-	@PostMapping("/addstudent")
+	@PostMapping(value="/addstudent",produces = { "application/json" })
 	ResponseEntity<Boolean> addStudent(@RequestBody Student student) {
 		return ResponseEntity.status(HttpStatus.OK).body(service.addStudent(student));
 	}
 	
-	@GetMapping("/{student}")
+	@GetMapping(value="/{student}",produces = { "application/json" })
 	ResponseEntity<Student> alldetails(@PathVariable String student) {
 		return ResponseEntity.status(HttpStatus.OK).body(service.alldetails(student));
 	}
